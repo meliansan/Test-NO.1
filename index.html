@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li>
+                    <!-- Enlace relaterno | Me redirecciona a otro archivo, pero aparte a una sección específica de ese archivo -->
+                    <a href="../clase-2/index.html#contact">Contacto</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Enlaces | Hipervinculos | Donde el usuario puede hacer click y es redireccionado | Ancla | Atributo href -> Hipervinculo de referencia -->
+
+    <!-- Enlaces absolutos | Redirecciona al usuario a una página o enlace externo a nuestra web-->
+
+    <!-- El atributo que me ayuda a que el enlace se abra en una nueva pestaña es target y su valor es _blank -->
+    <a href="https://www.google.com" target="_blank">
+        Ver más
+    </a>
+
+    <!-- Enlaces relativos | Redirecciona al usuario a un nuevo archivo, pero dentro de nuestro sitio o proyecto -->
+    <a href="servicios.html">
+        Servicios
+    </a>
+
+    <!-- Enlace Interno | Redirecciona al usuario a una sección dentro del mismo archivo -->
+    <a href="#contact">
+        Contacto
+    </a>
+
+<!-- Si quiero identificarla, puedo usar el atributo ID | Dentro de las comillas, agrego el nombre de la sección | Lo redirecciono o conecto con la sección a la cual quiero llevar al usuario, utilizando el simbolo # seguido del nombre de la sección a conectar | # hace referencia a un id -->
+    <section id="contact">
+       <a href=" https://wa.me/5491125363759">Hablemos por WhatsApp
+
+
+       </a>
+    </section>
+
+        <!-- Imágenes | SRC -> me pregunta cual es la ruta de la imagen que quiero mostrar 
+            | ALT -> Texto Alternativo, y cumple varias funciones -->
+        <!-- 1- La descripción de la imagen por si se rompe la ruta. 
+        2- La descripción del elemento html para los sistemas de apoyo para personas no videntes | Es súper importante para crear buenas impresiones
+        3- Las palabras claves para el posicionamiento SEO, es decir, cada palabra dentro de la descripción ayuda a que encuentren en nuestra web.-->
+        <a href="https://www.lollapaloozaar.com/"><img src="Multimedia/lolla.jpg" alt="Cartel de lollapalooza con luces de neón con cielo oscuro de fondo"></a>
+        
+        <!-- Formatos de imagen -> jpg, png, svg, avif, webp, jpeg2000, gif -->
+
+        <!-- VIDEO es para incrustar videos internos, es decir que estén dentro de nuestro proyecto. | Tengo que agregarle el atributo CONTROLS para que me permita utilizarlo -->
+        <video src="Multimedia/Modern Warfare.mp4" controls></video>
+
+        <audio src="Multimedia/y2mate.com - GTA Vice City Earrape Edition.mp3" controls>GTA VICE CITY EARRAPE</audio>
+
+        <!-- Youtube | iframe es un extracto de HTML de otra web |
+        Detnro del iframe se define el ancho y el alto-->
+
+        <iframe width="760" height="560" src="https://www.youtube.com/embed/E24Q43ALCoI?si=GueThqew6OqyjbPk" title="Bello Gato Maullando" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <!-- Google Maps -->
+
+        <footer> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2009.3783741792654!2d-58.57602537195318!3d-34.62553316884896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9c775d9ac5d%3A0x43baf7ae483052a9!2sBarrio%20Carlos%20Gardel!5e0!3m2!1ses-419!2sar!4v1704239149259!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </footer>
+       
+
+        <!-- Playlist Spotify -->
+
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0Pnm1YdTsOoN09gdUDpGN4?utm_source=generator&theme=0" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</body>
+</html>
